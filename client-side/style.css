@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #ace1af;
+}
+.message-container::-webkit-scrollbar {
+  display: none;
+}
+
+.main-title {
+  padding-bottom: 50px;
+  font-size: 55px;
+}
+
+#main-container {
+  display: block;
+  flex-direction: column;
+  gap: 8px;
+  border: 5px solid #00563b;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-block: 60px;
+  padding-inline: 85px;
+}
+
+#username-val {
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #d7f1d9;
+  outline: none;
+}
+#submit-btn {
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #d7f1d9;
+  cursor: pointer;
+}
+
+/* chatting page css from here */
+.whole-message-container {
+  display: flex;
+  flex-direction: column;
+}
+.chat-container {
+  position: relative;
+  display: none;
+  flex-direction: column;
+  gap: 3px;
+  border: 5px solid #00563b;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50vh;
+  height: 90vh;
+}
+.chatroom-header {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.message-container {
+  font-size: 25px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-inline: 5px;
+  height: 432px;
+  overflow: scroll;
+}
+.messages{
+  font-family: 'VT323', monospace;
+  padding: 5px;
+  max-width: 80%;
+  font-size: large;
+}
+.sent {
+  font-family: 'VT323', monospace;
+  align-self: flex-end;
+  border-radius: 10px 10px 0px 10px;
+}
+.receive {
+  font-family: 'VT323', monospace;
+  align-self: flex-start;
+  border-radius: 10px 10px 10px 0px;
+}
+
+.joined{
+  align-self: center;
+  font-size: small;
+  color: #00563b;
+}
+
+.enter-message {
+  
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  bottom: 5px;
+  padding: 5px;
+  width: 100%;
+}
+.message-val {
+  font-family: 'VT323', monospace;
+  width: 100%;
+  margin-right: 5px;
+  border: 2px solid black;
+  border-radius: 6px;
+  padding-left: 10px;
+  padding-block: 8px;
+}
+.sent-btn {
+  background-color: #ace1af;
+  border: 2px solid black;
+  border-radius: 7px;
+  outline: none;
+  cursor: pointer;
+  padding-inline: 6px;
+}

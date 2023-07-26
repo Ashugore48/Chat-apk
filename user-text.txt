@@ -1,0 +1,24 @@
+I am creating a web api where people can join and chat with each other
+for this we will need to use socket.io (cause we have to continuously fetch and transfer
+data to server and from server here socket io will help us to do this with low latancy)
+i have stored all frontend files in client-side folder and i will store all backend files 
+like server.js package.json node_modules in server-side folder
+
+**let's understand below code
+"
+io.on('connection', (socket)=>{
+    console.log('connection established', socket.id);
+
+    socket.on('disconnect', ()=>{
+        console.log(`${socket.id} left the chat`);
+    })
+})
+"
+
+everytime when someone is joining will trigger io and will get one unique socket.id
+then 'connection established and socket.id' will get logged in console
+and after socket/person closes the tag 'socket.id left the chat' will get logged.
+
+
+`in simple language io is server and sockets are sitting on the clients`
+if io emmit anything all socket can listen but if socket emmit anything only io can listen

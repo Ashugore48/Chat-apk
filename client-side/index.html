@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToshChats</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+  </head>
+  <body>
+    <div id="main-container">
+      <h1 class="main-title">User Information</h1>
+      <input type="text" id="username-input" placeholder="Enter Username" />
+      <button type="submit" id="join-btn">Enter Chat</button>
+    </div>
+    <div id="chat-container" class="chat-container">
+      <div class="chatroom-header" id="chatroom-header">ToshChats</div>
+      <div class="whole-message-container">
+        <div class="message-container" id="message-container">
+          <!-- <div class="messages sent">Hey.Ashu</div>
+          <div class="messages receive">Sudhanshu.Hi!!</div>
+          <div class="joined">Om joined the chat</div> -->
+        </div>
+        <div class="enter-message" id="enter-message">
+          <input
+            type="text"
+            id="message-val"
+            class="message-val"
+            placeholder="Message"
+          />
+          <button class="send-btn" id="send-btn">
+            <span class="material-symbols-outlined"> send </span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.1/socket.io.js" integrity="sha512-Z6C1p1NIexPj5MsVUunW4pg7uMX6/TT3CUVldmjXx2kpip1eZcrAnxIusDxyFIikyM9A61zOVNgvLr/TGudOQg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
